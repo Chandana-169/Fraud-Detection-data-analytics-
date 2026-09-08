@@ -1,12 +1,15 @@
 # Day 27 — Streamlit Setup
 
 ## Objective
-Set up the interactive Streamlit dashboard environment.
+Prepare the interactive web dashboard environment from the trained fraud-detection package.
 
-## Work Completed
-- Installed Streamlit and supporting tunneling tools.
-- Created the initial dashboard application.
-- Configured and launched the dashboard for testing.
+## Notebook Work
+Cell 122 creates an `app.py` Streamlit application that loads saved preprocessors, models, anomaly scalers, and final model configuration. Cell 123 installs Streamlit and Pyngrok. Cells 124A/124B check the local Streamlit server and configure ngrok.
 
-## Output
-A working Streamlit dashboard environment was prepared for the interactive fraud detection interface.
+The first server check reports that Streamlit was not running at that moment; ngrok authentication configuration is included in the notebook.
+
+## Outcome
+The dashboard application file and supporting web-deployment tooling were prepared in Colab.
+
+## Notebook Reference
+Cells 122–124B
