@@ -1,13 +1,15 @@
 # Day 09 — Class Imbalance
 
 ## Objective
-Handle the imbalanced fraud class during model training.
+Handle the minority fraud class so models do not simply favor normal transactions.
 
-## Work Completed
-- Examined the normal/fraud class imbalance.
-- Applied SMOTE to training data.
-- Kept validation and test datasets untouched.
-- Reprocessed the Credit dataset after feature-type correction.
+## Notebook Work
+The datasets contain only 4% fraud, making class imbalance an important modeling issue. Cell 19 applies **SMOTE only to the training data**, after preprocessing. Validation and test data are not oversampled.
 
-## Output
-Balanced training sets were created for supervised model development without oversampling validation or test data.
+The Credit dataset receives a corrected preprocessing pass after `MerchantID` is recognized as categorical, followed by a fresh SMOTE application in Cells 20–22.
+
+## Outcome
+Training data is balanced using synthetic minority oversampling while validation/test distributions remain untouched. This supports fair evaluation with precision, recall, F1, and PR-AUC rather than accuracy alone.
+
+## Notebook Reference
+Cells 19–22
