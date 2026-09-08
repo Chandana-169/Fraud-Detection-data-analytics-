@@ -1,16 +1,15 @@
 # Day 20 — Transaction Investigation
 
 ## Objective
-Investigate individual fraud predictions and identify different prediction outcomes.
+Turn model predictions into an investigation-oriented view of suspicious transactions.
 
-## Work Completed
-- Categorized transactions as Confirmed Fraud, Potential False Positive, Missed Fraud, or Normal.
-- Reviewed transaction-level predictions and risk information.
-- Produced an investigation summary.
-- Included the project's graph/network analysis where applicable.
+## Notebook Work
+The notebook includes a dedicated Day 20 investigation block after the initial dashboard/deployment cells. It uses the selected models and thresholds for Credit, Financial, Synthetic, and Orders, generates fraud probabilities, assigns High/Medium/Low risk, and compares predictions with actual labels.
 
-## Graph / Network Analysis
-The project also analyzes transaction relationships, suspicious connections, and high-risk entities using the available network structure.
+Each investigated transaction receives a status: **Confirmed Fraud**, **Potential False Positive**, **Missed Fraud**, or **Normal**. Results are sorted by fraud probability and the top suspicious transactions are displayed. An overall investigation summary is also saved as `transaction_investigation_summary.csv`.
 
-## Output
-Transaction investigation and network analysis provide additional context for fraud review.
+## Outcome
+The project moves from model scores to an analyst-facing investigation table that separates confirmed detections, false positives, missed fraud, and normal transactions.
+
+## Notebook Reference
+Dedicated Day 20 block following Cell 124B
