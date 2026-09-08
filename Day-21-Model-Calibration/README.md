@@ -1,13 +1,13 @@
 # Day 21 — Model Calibration
 
-## Objective
-Assess how well model probabilities correspond to observed fraud outcomes.
+## Notebook Status
+A separate, completed calibration experiment is **not present as a dedicated cell** in the verified notebook sequence.
 
-## Work Completed
-- Generated validation probabilities from selected supervised models.
-- Examined calibration curves.
-- Calculated Brier scores.
-- Prepared a calibration summary.
+## What the Notebook Does Instead
+The project explicitly produces probability scores and performs validation-based threshold optimization. Final evaluation uses precision, recall, F1-score and PR-AUC, and the deployment package stores the chosen decision threshold with the selected model.
 
-## Output
-Model probability calibration was evaluated as part of the fraud detection validation workflow.
+## Result
+No calibration curve, Brier score, isotonic calibration, Platt scaling, or calibrated-model result is claimed because those operations are not present in the notebook source.
+
+## Notebook Reference
+Probability and threshold workflow: Cells 23–30 and final model configuration in Cells 56–69
