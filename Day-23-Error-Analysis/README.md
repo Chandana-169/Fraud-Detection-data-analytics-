@@ -1,13 +1,15 @@
 # Day 23 — Error Analysis
 
-## Objective
-Understand the types of mistakes made by the fraud detection models.
+## Notebook Status
+The verified notebook does not contain a separately titled Day 23 error-analysis block. However, error behavior is evaluated throughout model comparison, threshold tuning, confusion matrices, and transaction investigation.
 
-## Work Completed
-- Analyzed confusion matrices.
-- Investigated false positives and false negatives.
-- Created error/mistake summaries.
-- Included the project's adaptive learning and drift-detection analysis where applicable.
+## Available Error Analysis
+Cell 57 generates final confusion matrices. Cell 58 produces evaluation curves. Cell 60 generates risk/alert outputs, and the transaction-investigation section classifies predictions as confirmed fraud, potential false positives, missed fraud, or normal.
 
-## Output
-Error analysis highlighted where fraud predictions succeeded or failed and supported further model assessment.
+The Financial model remains the weakest selected model, while the final test results show stronger F1 on Credit, Synthetic, and Orders.
+
+## Outcome
+The project has practical false-positive/missed-fraud analysis through confusion matrices and investigation statuses, but no separate dedicated Day 23 notebook block is claimed.
+
+## Notebook Reference
+Cells 57–60 and the Day 20 investigation block
