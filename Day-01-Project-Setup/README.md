@@ -1,12 +1,20 @@
 # Day 01 — Project Setup
 
 ## Objective
-Set up the Financial Fraud Detection project environment and load the required datasets.
+Set up the Google Colab environment for the Financial Fraud Detection project and confirm that the notebook can load the required Python libraries.
 
-## Work Completed
-- Imported the required Python libraries.
-- Set up Google Colab file upload.
-- Loaded the Credit, Financial, Synthetic, and Orders datasets.
+## Notebook Work
+**Cell 1 — Import Libraries**
 
-## Output
-The project datasets were loaded successfully and made ready for analysis.
+The notebook imports the core data-science stack used throughout the project:
+- pandas and NumPy for data handling and numerical operations
+- Matplotlib and Seaborn for analysis and visualization
+- warnings to keep notebook output clean
+
+The cell finishes with a successful import confirmation.
+
+## Result
+The project starts with a working Python/Colab environment ready for dataset loading, exploratory analysis, preprocessing, machine learning, anomaly detection, visualization, and deployment work in later days.
+
+## Notebook Reference
+Cell 1
