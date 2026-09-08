@@ -1,12 +1,13 @@
 # Day 13 — Optuna Optimization
 
-## Objective
-Optimize model hyperparameters using Optuna.
+## Notebook Status
+The uploaded notebook does **not contain a dedicated Optuna training/optimization cell**. The verified model-training sequence moves from XGBoost (Cells 28–30) to SVM (Cell 31).
 
-## Work Completed
-- Applied hyperparameter optimization to the fraud detection workflow.
-- Searched for improved model configurations.
-- Evaluated the optimized model using fraud-focused metrics.
+## What Is Present
+XGBoost hyperparameters are explicitly defined in Cell 28 and its validation threshold is optimized in Cell 29, but this is threshold optimization—not an Optuna hyperparameter search.
 
-## Output
-An optimized configuration was investigated to improve the supervised fraud detection model.
+## Result
+No Optuna trial count, best-parameter set, or Optuna-derived performance result is claimed here because those details are not present in the notebook source.
+
+## Notebook Reference
+Cells 28–31
