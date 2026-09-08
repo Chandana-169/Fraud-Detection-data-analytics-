@@ -1,13 +1,15 @@
 # Day 28 — Streamlit Dashboard
 
 ## Objective
-Develop an interactive dashboard for the fraud detection system.
+Build an interactive fraud-detection interface for transaction-level prediction and risk reporting.
 
-## Work Completed
-- Upgraded the dashboard to support all four project datasets.
-- Added dataset-specific model and threshold metadata.
-- Integrated interactive fraud prediction functionality.
-- Prepared dashboard metadata for the saved model package.
+## Notebook Work
+Cell 122 creates the initial Streamlit dashboard. It loads the saved model package, exposes dataset/model/threshold information, accepts transaction inputs, runs fraud prediction, and displays probability, risk level, alert status, and transaction details.
 
-## Output
-The dashboard provides an interactive interface for exploring and predicting fraud across the project datasets.
+The dashboard initially exposes Financial transaction inputs and includes a project-components section covering supervised models, anomaly detection, hybrid scoring, graph analysis, streaming simulation, adaptive learning, and the Flask API.
+
+## Outcome
+A working Streamlit dashboard application was generated from the trained fraud-detection artifacts.
+
+## Notebook Reference
+Cell 122
