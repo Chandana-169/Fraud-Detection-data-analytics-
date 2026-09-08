@@ -1,13 +1,15 @@
 # Day 04 — Data Preprocessing
 
 ## Objective
-Prepare the selected datasets for machine learning.
+Prepare the four datasets for machine-learning models while preserving useful categorical and numerical information.
 
-## Work Completed
-- Removed unnecessary identifier/date fields from modeling datasets.
-- Created feature matrices and target variables.
-- Identified numerical and categorical features.
-- Built preprocessing pipelines with imputation, scaling, and categorical encoding.
+## Notebook Work
+Cells 14–22 create clean modeling datasets, separate features and targets, identify numerical/categorical columns, build preprocessing pipelines, and handle the Credit dataset's `MerchantID` correctly.
 
-## Output
-Clean, transformed feature data was prepared for model training.
+The preprocessing workflow uses `ColumnTransformer`/`Pipeline` and encodes categorical features while scaling numerical features. `MerchantID` is explicitly changed from numerical to categorical because it is an identifier rather than a continuous measurement. Credit preprocessing is then rebuilt and SMOTE is reapplied.
+
+## Outcome
+Dataset-specific processed feature matrices were produced. The final processed dimensions include approximately 429 Credit features, 32 Financial features, 30 Synthetic features, and 36 Orders features after encoding.
+
+## Notebook Reference
+Cells 14–22
