@@ -1,12 +1,15 @@
 # Day 22 — Cross-Dataset Validation
 
-## Objective
-Assess model behavior across the project's multiple fraud datasets using the existing validation workflow.
+## Notebook Status
+The verified notebook does **not contain a dedicated cross-dataset validation experiment** that trains on one dataset and tests on another.
 
-## Work Completed
-- Evaluated the compatible dataset/model combinations used in the project.
-- Compared validation fraud-detection metrics across datasets.
-- Recorded the existing cross-dataset validation results.
+## What Is Actually Evaluated
+The notebook evaluates four datasets independently through the same overall modeling framework: Credit, Financial, Synthetic, and Orders. Each dataset keeps its own schema, preprocessing pipeline, models, threshold, and final evaluation.
 
-## Output
-Cross-dataset validation results were summarized to understand model generalization within the project datasets.
+This is useful for comparing model behavior across datasets, but it is not equivalent to true transfer validation because the feature spaces are different.
+
+## Result
+No cross-dataset F1/PR-AUC table is claimed here because a dedicated cross-dataset experiment is not present in the notebook.
+
+## Notebook Reference
+Independent multi-dataset evaluation: Cells 14–69
